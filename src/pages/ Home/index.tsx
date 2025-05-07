@@ -2,7 +2,7 @@ import { Button } from "../../components/Button";
 import { Button2 } from "../../components/Button2";
 import ProfileCard from "../../components/ProfileCard";
 import ProfileCard2 from "../../components/ProfileCard2";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Home() {
   const navigate = useNavigate();
@@ -61,6 +61,7 @@ export function Home() {
         telephoneNumber="090-1234-5678"
       />
       <button onClick={handleTodo}>Todoページへ</button>;
+      <Link to="/Todo2" style={{display: 'block'}}>Todo2ページへ</Link>
     </div>
   );
 }
