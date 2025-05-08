@@ -57,11 +57,20 @@ export function Home() {
         name="橘田大翔"
         age={20}
         gender="男性"
-        address="東京都千代田区川田町800−2"
+        address="東京都千代田区川田町800-2"
         telephoneNumber="090-1234-5678"
       />
       <button onClick={handleTodo}>Todoページへ</button>;
-      <Link to="/Todo2" style={{display: 'block'}}>Todo2ページへ</Link>
+      <Link to="/Todo2" style={{ display: "block" }}>
+        Todo2ページへ
+      </Link>
+      <Link to="/FormProcessing" style={{ display: "block" }}>
+        FormProcessingページへ
+      </Link>
+      <Link to="/FormProcessing2" style={{ display: "block" }}>
+        FormProcessing2ページへ
+      </Link>
     </div>
   );
 }
+  
